@@ -1,0 +1,69 @@
+@use "variables" as v;
+
+/** Media Queries **/
+@mixin min_phone {
+  @media (min-width: v.$phone) {
+    @content;
+  }
+}
+
+@mixin min_tablet {
+  @media (min-width: v.$tablet) {
+    @content;
+  }
+}
+
+@mixin min_desktop {
+  @media (min-width: v.$desktop) {
+    @content;
+  }
+}
+
+/** Media Queries **/
+@mixin max_phone {
+  @media (max-width: v.$phone) {
+    @content;
+  }
+}
+
+@mixin max_tablet {
+  @media (max-width: v.$tablet) {
+    @content;
+  }
+}
+
+@mixin max_desktop {
+  @media (max-width: v.$desktop) {
+    @content;
+  }
+}
+
+@mixin button($bgColor, $textColor, $display) {
+  border: none;
+  border-radius: 0.5rem;
+  display: $display;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+  background-color: $bgColor;
+  color: $textColor;
+  transition: 0.3s;
+  // display: inline-block;
+
+  &:hover {
+    background-color: darken($bgColor, 10%);
+    cursor: pointer;
+  }
+}
+
+@mixin button_input($bgColor, $textColor, $display) {
+  @include button($bgColor, $textColor, $display);
+  width: 100%;
+}
+
+@mixin grid($columns, $space) {
+  display: grid;
+  gap: $space;
+  grid-template-columns: repeat($columns, 1fr);
+}
