@@ -13,11 +13,11 @@ body {
   font-family: v.$fontPrincipal;
   font-size: 1.6rem;
   font-weight: 300;
-  background-color: v.$black;
+  background-color: v.$dark;
   color: v.$white;
 
   &::-webkit-scrollbar {
-    background-color: v.$darkGray;
+    background-color: v.$dark;
     width: 0.8rem;
   }
 
