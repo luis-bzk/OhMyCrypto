@@ -1,6 +1,7 @@
 // Fuentes
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
-$fontPrincipal: "Lato", sans-serif;
+$fontPrincipal: "Lato",
+sans-serif;
 
 // Size de Media Queries
 $phone: 480px;
@@ -10,10 +11,13 @@ $desktop: 1024px;
 // Colors
 $black: #1a1b1c;
 $white: #ffffff;
-$blue: #04bfe6;
-$red: #cb3e25;
-$green: #00e0b6;
-$purple: #da35ff;
+// $blue: #04bfe6;
+$blue: #01c7ee;
+$red: #e23a3a;
+$green: #18ccab;
+// $green: #00e0b6;
+$violet: #7264ff;
+$purple: #6a2ffe;
 $yellow: #fea951;
 $gray: #e8eef3da;
 $darkGray: #58585c;

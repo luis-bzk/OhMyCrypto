@@ -1,15 +1,18 @@
-import {useState} from "react";
+import { useState } from "react";
 
 const useSelectCurrency = (label, currenciesOptions) => {
-
-  const [state, setState] = useState('');
+  const [coinValue, setCoinValue] = useState("");
 
   const SelectCurrency = () => {
     return (
       <>
         <label className={"formulary__label"}>{label}</label>
 
-        <select className={"formulary__select"} value={state} onChange={ event => setState(event.target.value)} >
+        <select
+          className={"formulary__select"}
+          value={coinValue}
+          onChange={(event) => setCoinValue(event.target.value)}
+        >
           <option value="">Select an option</option>
 
           {currenciesOptions.map((option) => (
@@ -22,7 +25,7 @@ const useSelectCurrency = (label, currenciesOptions) => {
     );
   };
 
-  return [state, SelectCurrency];
+  return [coinValue, SelectCurrency];
 };
 
 export default useSelectCurrency;

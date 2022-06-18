@@ -1,22 +1,26 @@
-@use "../base/variables" as v;
-@use "../base/mixins" as m;
+@use "../base/variables"as v;
+@use "../base/mixins"as m;
 
 .app-layout {
   // position
-  position: fixed;
+  position: absolute;
   top: 1rem;
   left: 0;
   right: 0;
   // structure
   @include m.grid(1, 2rem);
+  padding: 2rem 1rem 5rem 1rem;
+  margin-bottom: 4rem;
 
   @include m.min_tablet {
     // position
     top: 50%;
     transform: translateY(-50%);
+    // margin-top: 18%;
 
     // structure
     @include m.grid(2, 2rem);
+    // margin-bottom: 1rem;
   }
 
   .crypto-img {

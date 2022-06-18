@@ -1,0 +1,11 @@
+@use "../base/variables"as v;
+
+.error-validation {
+  padding: 1rem;
+  border-radius: 1.5rem;
+  background-color: v.$red;
+  color: v.$white;
+  text-align: center;
+  font-weight: 700;
+
+}
