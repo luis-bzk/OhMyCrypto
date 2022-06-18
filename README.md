@@ -23,12 +23,16 @@
 
 ### }
 
-### Form Functions{
 
-- clickbutton -> button pressed effect
-- handleSubmit -> Send data, validate data,
+### Files {
+
+- Error.jsx -> New error, accept a message
+- form.jsx -> Register new values using main Hooks
+- QuoteResult.jsx -> Data result by searching and consult
+- Spinner.jsx -> set a loader spinner
 
 ### }
 
-<!-- ### {
-### } -->
+### Where use{
+> https://ohmycryptoquote.netlify.app/
+### }
